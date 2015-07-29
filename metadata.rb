@@ -3,12 +3,9 @@ maintainer       'Adam Balali'
 maintainer_email 'adamba@johnbox.net'
 license          'All rights reserved'
 description      'Installs/Configures Zabbix Agent/Server'
-long_description <<-TEXT
-This cookbook install zabbix-agent and zabbix-server.
-By default the cookbook installs zabbix-agent, if you would like to install zabbix-server you should add zabbix2::server to your run_list
-Default login password for zabbix frontend is admin / zabbix CHANGE IT !
-TEXT
-version          '0.1.1'
+long_description IO.read(File.join(File.dirname(__FILE__), 'README.md'))
+version          '0.1.2'
+source_url       'https://github.com/AdamBalali/zabbix2'
 
 %w{ ubuntu suse redhat centos windows }.each do |os|
   supports os
