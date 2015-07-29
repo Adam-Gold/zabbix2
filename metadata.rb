@@ -8,7 +8,7 @@ This cookbook install zabbix-agent and zabbix-server.
 By default the cookbook installs zabbix-agent, if you would like to install zabbix-server you should add zabbix2::server to your run_list
 Default login password for zabbix frontend is admin / zabbix CHANGE IT !
 TEXT
-version          '0.1.0'
+version          '0.1.1'
 
 %w{ ubuntu suse redhat centos windows }.each do |os|
   supports os
