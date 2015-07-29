@@ -10,20 +10,10 @@ Attributes
 ----------
 
 #### zabbix2::default
-<table>
-  <tr>
-    <th>Key</th>
-    <th>Type</th>
-    <th>Description</th>
-    <th>Default</th>
-  </tr>
-  <tr>
-    <td><tt>['zabbix']['server_ip']</tt></td>
-    <td>String</td>
-    <td>Set the Server IP Address</td>
-    <td><tt>127.0.0.1</tt></td>
-  </tr>
-</table>
+
+| Key                      | Type   | Description               | Default   |
+|--------------------------|--------|---------------------------|-----------|
+| ['zabbix']['serverv_ip'] | String | Set the Server IP Address | 127.0.0.1 |
 
 Usage
 -----
@@ -31,17 +21,18 @@ Please include the default recipe before using any other recipe.
 
 Installing the Agent:
 
-```json
+~~~json
 {
   "name":"my_node",
   "run_list": [
     "recipe[zabbix2]"
   ]
 }
-```
+~~~
 
 Installing the Server:
-```json
+
+~~~json
 {
   "name":"my_node",
   "run_list": [
@@ -49,7 +40,7 @@ Installing the Server:
     "recipe[zabbix2::server]"
   ]
 }
-```
+~~~
 
 Contributing
 ------------
